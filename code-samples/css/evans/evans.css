@@ -1,0 +1,569 @@
+/* Uncomment the following to hide the gold W patch */
+/*.wheader.patchYes .wlogoSmall .logoAbsolute { display: none; }*/
+
+#logo
+{
+	/* Replace the logo.png file in image/ with your logo */
+	background-image: url(../image/logo.png);
+	width: 502px;
+
+	/* Uncomment the following if you've hid the gold W patch */
+	/* background-position: 15px 2px; */
+}
+
+#logoPrint
+{
+	/* Replace the print_logo.png file in image/ with your print logo */
+}
+
+
+
+/*******************************************************************************
+Tweak the tabbed navigation to allow two-line text wrapping 
+*******************************************************************************/
+
+ul#navg {
+	margin-top: -9px;
+	margin-left: 20px;
+}
+
+#visual-portal-wrapper {
+	background: url(../image/bg_portal.gif) repeat-x;
+}
+
+#navg li.mainNavLinkLeft {
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	height:	36px;
+	background-repeat: repeat-y;
+}
+
+#navg li.mainNavLinkLeft a.mainNavLinkNotch {
+	display: block;
+	padding: 0px 4px;
+	width: 92px;
+	height:	38px;
+	text-align:center;
+}
+
+#header .mainNavLinkLeft:hover {
+	background-image: url(../image/mainNav_left.gif);
+}
+
+#navg li:hover .mainNavLinkRight {
+	background-image: url(../image/mainNav_right.gif);
+}
+
+#navg li:hover .mainNavLinkNotch {
+	background-position: center 26px;
+}
+
+
+
+/*******************************************************************************
+Explicitly adjust the 4 right-most fly-out menus to the left
+*******************************************************************************/
+
+#navg li.menu-859 div.mainNavLinkRight div.text { margin-left:  -80px; } /* Executive Education Menu */
+#navg li.menu-862 div.mainNavLinkRight div.text { margin-left: -160px; } /* Employers & Partners Menu */
+#navg li.menu-861 div.mainNavLinkRight div.text { margin-left: -240px; } /* Alumni Menu */
+#navg li.menu-860 div.mainNavLinkRight div.text { margin-left: -320px; } /* MyEvans */
+
+
+
+/*******************************************************************************
+Alter the H1 left-vertical-rule to allow for multiple lines of text
+*******************************************************************************/
+
+h1.documentFirstHeading {
+	margin:30px 0 10px 0;
+	padding:0 0 0 20px;
+	background: url(/sites/all/themes/uw/image/h1_bar.gif) left 4px repeat-y;
+}
+
+
+
+/*******************************************************************************
+Control the display of the repeated navigation menu in the footer
+*******************************************************************************/
+
+#navg-footer-menu div.content > ul.menu > li {
+	float: left;
+	width: 83px;
+	font-size: 11px;
+	text-align: center;
+	padding: 0px 2px;
+}
+
+#navg-footer-menu div.content > ul.menu > li > a,
+#navg-footer-menu div.content > ul.menu > li > a:hover,
+#navg-footer-menu div.content > ul.menu > li > a:active {
+	font-weight: bold;
+	height: 30px;
+	display: block;
+}
+
+
+#navg-footer-menu div.content > ul.menu > li > ul.menu > li > a,
+#navg-footer-menu div.content > ul.menu > li > ul.menu > li > a:hover,
+#navg-footer-menu div.content > ul.menu > li > ul.menu > li > a:active {
+	font-weight: normal;
+}
+
+
+
+#navg-footer-menu div.content > ul.menu > li > ul.menu > li {
+	margin-top: .75em;
+}
+
+
+
+/*******************************************************************************
+Tweak the display of the center 'legal' footer menu
+*******************************************************************************/
+
+#footerCenter {
+	width:	130px;
+}
+
+/*******************************************************************************
+Control display of UW Resources menu
+*******************************************************************************/
+
+#wtext #header-uw-resources li {
+	background-image: url(/sites/all/themes/uw/image/header_img/leftbar.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	display: block;
+	float: left;
+}
+
+#wtext #header-uw-resources li.first {
+	background-image: none
+}
+
+div.footerLinks h2 {
+	font-size: 15px;
+	margin: 0;
+}
+
+
+/*******************************************************************************
+Style the sub-mastheads
+*******************************************************************************/
+
+#sub_masthead
+{
+	position: relative;
+}
+
+#sub_masthead div.portalRound {
+	width:	870px;
+	margin: 10px 0 0 41px;
+	display:	block;
+	position: relative;
+	background: url(../../uw/image/rounded-trans/l.png) repeat-y left;
+	/*
+	background: url(../image/rounded-trans/l.png) repeat-y left;
+	*/
+}
+
+#sub_masthead div.portalRound div.portalBlockBG div.bgtop {
+	background: url(../../uw/image/rounded-trans/t.png) repeat-x top;	
+	/*
+	background: url(../image/rounded-trans/t.png) repeat-x top;	
+	*/
+}
+
+#sub_masthead div.portalRound div.portalBlockBG div.bg {
+	background: url(../../uw/image/rounded-trans/b.png) repeat-x bottom;	
+	/*
+	background: url(../../uw/image/rounded-trans/b.png) repeat-x bottom;	
+	*/
+}
+
+#sub_masthead div.portalRound div.portalBlockBG {
+	background: url(../../uw/image/rounded-trans/r.png) right repeat-y;	
+	/*
+	background: url(../../uw/image/rounded-trans/r.png) right repeat-y;	
+	*/
+}
+
+#sub_masthead div.portalRound div.portalBlockBG div.pad3 {
+	margin: -9px 0 0 0;
+	padding: 0 0 0 2px;
+	height: 72px;
+	position: relative;
+}
+
+
+
+#sub_masthead .image_tl
+{
+		position: absolute;
+		top: 0px;
+		left: 41px;
+		z-index: 3000;
+		width: 10px;
+		height: 10px;
+		background: url(../../uw/image/rounded-trans/tl.png) top left no-repeat;
+		/*
+		background: url(../image/rounded-trans/tl.png) top left no-repeat;
+		*/
+}
+
+#sub_masthead .image_tr
+{
+		position: absolute;
+		top: 0px;
+		right: 39px;
+		z-index: 3001;
+		width: 14px;
+		height: 11px;
+		background: url(../../uw/image/rounded-trans/tr.png) top right no-repeat;
+		/*
+		background: url(../image/rounded-trans/tr.png) top right no-repeat;
+		*/
+}
+
+#sub_masthead .image_bl
+{
+		position: absolute;
+		bottom: 0px;
+		left: 41px;
+		z-index: 3002;
+		width: 9px;
+		height: 12px;
+		background: url(../../uw/image/rounded-trans/bl.png) bottom left no-repeat;
+		/*
+		background: url(../image/rounded-trans/bl.png) bottom left no-repeat;
+		*/
+}
+
+#sub_masthead .image_br
+{
+		position: absolute;
+		bottom: 0px;
+		right: 39px;
+		z-index: 3003;
+		width: 12px;
+		height: 12px;
+		background: url(../../uw/image/rounded-trans/br.png) bottom left no-repeat;
+		/*
+		background: url(../image/rounded-trans/br.png) bottom left no-repeat;
+		*/
+}
+
+
+
+/*******************************************************************************
+Get rid of the Yellow eader indicator on the block admin pages.
+It messes up the rest of the theme
+*******************************************************************************/
+
+#bg #header div.block-region {
+	display: none;
+}
+
+
+
+/** Calendar **/
+a.ical-icon
+{
+        visibility: visible;
+}
+
+
+
+
+/*******************************************************************************
+Setup the profile inset styling for profile pages
+*******************************************************************************/
+#profile_inset {
+	margin-left: -12px;
+	padding-left: 22px;
+	margin-top: 5px;
+	background: url(/sites/all/themes/uw/image/shadow_show.png) left top no-repeat;
+}
+
+#profile_inset h2.pane-title {
+	font-size: 120%;
+	letter-spacing: 0;
+	line-height: 1.2em;
+	margin: 10px 0 0 0;
+}
+
+#profile_inset .profile_inset_last {
+	background: url(/sites/all/themes/uw/image/shadow_show_bottom.jpg) left bottom no-repeat;
+	margin-left: -22px;
+	padding-left: 22px;
+}   
+
+.node-type-profile-acad .node-form .form-checkboxes div.form-item {
+	border-top:	1px #CCC dotted;
+	width: 199px;
+	float: left;
+	padding-left: 2em;
+	font-size: 90%;
+}
+
+.node-type-profile-acad .node-form .form-checkboxes div.form-item label {
+	margin-left:	-2em;
+}
+
+#edit-field-recent-pubs-0-value-wrapper {
+	clear: left;
+	margin-top: 1em;
+}
+
+
+/*******************************************************************************
+ Handle menu_picker styles for the about/events* pages
+******************************************************************************/
+#block-evans_tweaks-eventsmenublock+div.block-page_block
+{
+	margin-top: 60px;
+}
+
+#block-evans_tweaks-eventsmenublock
+{
+	margin-bottom: 0;
+}
+
+#block-evans_tweaks-eventsmenublock ul.menu a {
+	padding-left: 10px;
+	display: inline-block;
+	width: 100%;
+}
+#block-evans_tweaks-eventsmenublock ul li a:hover,
+#block-evans_tweaks-eventsmenublock ul li a:focus,
+#block-evans_tweaks-eventsmenublock ul li.active-trail > a {
+	background-image:url(../../uw/image/arrow_h3.gif);
+	background-position: left center;
+	background-repeat: no-repeat;
+	outline:none;
+}
+
+#block-evans_tweaks-eventsmenublock ul li.active-trail > a
+{
+	font-weight: bold;
+}
+
+#block-evans_tweaks-eventsmenublock ul li.active-trail ul li.active-trail > a
+{
+	background-image: none;
+}
+
+#block-evans_tweaks-eventsmenublock ul.menu ul li a
+{
+	padding-left: 0;
+	width: 100%;
+}
+
+#block-evans_tweaks-eventsmenublock ul ul li a:hover,
+#block-evans_tweaks-eventsmenublock ul ul li a:focus {
+	color: #000;
+	background-image: none;
+}
+#block-evans_tweaks-eventsmenublock ul ul a:focus {
+	color: #666;
+}
+#block-evans_tweaks-eventsmenublock ul ul li:hover,
+#block-evans_tweaks-eventsmenublock ul ul li:focus
+{
+	background-color: #F6F6F6;
+}
+#block-evans_tweaks-eventsmenublock li {
+	display: block;
+	margin: 0;
+	padding: 1px 0 2px;
+}
+#block-evans_tweaks-eventsmenublock ul li ul li:last {
+	padding-bottom: 15px;
+}
+#block-evans_tweaks-eventsmenublock ul > li{
+border-bottom:1px solid #f2f2f2;
+}
+#leftNav .block-evans_tweaks ul ul {
+	margin: 5px 0 0;
+	padding: 8px 0 10px;
+	background-image: url(../../uw/image/nav_notch2.gif);
+	background-position: center top;
+	background-repeat: no-repeat;
+}
+#block-evans_tweaks-eventsmenublock  ul{
+    width:170px;
+    margin-left:25px;
+    margin-top:10px;
+}
+#block-evans_tweaks-eventsmenublock ul ul a {
+	font-size: 88%;
+	padding-left:0;
+	padding-right:0;
+}
+#block-evans_tweaks-eventsmenublock ul ul li {
+	border-bottom: 1px solid #CCC;
+	padding-left: 10px;
+	padding-top: 2px;
+	background-color: #ECEBEC;
+}
+
+
+#block-evans_tweaks-eventsmenublock ul li.collapsed:hover
+{
+	background:url(../../uw/image/arrow_down.gif) no-repeat right center scroll transparent;
+}
+
+#bg #block-evans_tweaks-eventsmenublock ul li
+{
+	list-style-image: none;
+	margin-bottom: 0;
+}
+
+/******************************************
+Front Page Events
+******************************************/
+.view-display-id-calendar_1 .feed-icon,
+.view-display-id-calendar_block_1 .feed-icon{
+display:none;
+}
+
+/**********************************************
+ Event Details Styling
+ *********************************************/
+.event-contact-wrapper{
+    margin-left:1.5em;
+    margin-top:1.5em;
+}
+
+.event-description{
+    margin-top:1.5em;
+}
+
+
+/**********************************************
+ Event CTA Styling
+ *********************************************/
+#login-cta-wrapper, #event-cta-wrapper{
+	float:right;
+	position:relative;
+}
+
+#event-cta-wrapper {
+	top:-50px;
+}
+
+#login-cta-wrapper,#event-cta-wrapper{
+	/* 2013-01-07 -- JSW -- vertical margins bork the "next" block in the calendar header
+	margin:10px;
+	padding:10px;
+	*/
+	padding-left:30px;
+	padding-right:30px;
+	background-color:#CCA000; /* fallback for browsers that don't understand rgba */
+	border: solid 1px #000; /* fallback for browsers that don't understand rgba */
+	-moz-border-radius:10px;  /* for Firefox */
+	-webkit-border-radius:10px; /* for Webkit-Browsers */
+	border-radius:10px; /* regular */
+	opacity:.75;
+	height:20px;
+}
+
+#login-cta-wrapper a,#event-cta-wrapper a{
+	font-size:120%;
+	text-transform:uppercase;
+	text-decoration:none;
+	color:#39275B;
+	font-weight:bold;
+}
+
+#login-cta span, #event-cta span{
+	opacity:1;
+}
+
+
+/*******************************************************************************
+Styling for news archive pages
+*******************************************************************************/
+#bg div.view-news-items.view-display-id-page_1 div.views-field-title {
+	font-size: 125%;
+	font-weight: bold;
+}
+
+#bg div.view-news-items.view-display-id-page_1 div.view-content ul {
+	margin: 0 0 0 0;
+}
+
+#bg div.view-news-items.view-display-id-page_1 div.view-content ul li {
+	margin: 0 0 0 0; 
+	padding: 10px 10px 20px 10px;
+	list-style-type: none;
+	list-style-image: none;
+}
+
+#bg div.view-news-items.view-display-id-page_1 ul li.views-row-odd {
+	background-color: #F1F5FA;
+}
+
+/*******************************************************************************
+Handles display of additional social media in footer menu
+*******************************************************************************/
+
+a.picasa {
+		                    padding: 2px 0 4px 22px;
+}
+
+.footerLinks a.picasa {background: url(../image/picasa.png) no-repeat left 2px;}
+
+/*******************************************************************************
+Front Page tweaks
+*******************************************************************************/
+
+body.front .field-field-region-3-nodes > .field-items > .field-item
+{
+	float: left;
+	width: 210px;
+}
+
+body.front .field-field-region-3-nodes > .field-items > .field-item.even
+{
+	width: 430px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+
+body.front .portalRound .pad3 .field-type-link, body.front .portalRound .pad3 .more-links {
+	bottom: 0px;
+}
+
+
+/*******************************************************************************
+Funding Lists
+*******************************************************************************/
+
+ul.funding_list {
+	border-top: 1px solid #f0f0f0;
+
+}
+
+ul.funding_list > li {
+	margin-bottom: 1.5em;
+	border-bottom: 1px solid #f0f0f0;
+}
+
+
+/*******************************************************************************
+Stle definition for borders on tables
+*******************************************************************************/
+
+table.tbl_border {
+	border: 1px #CCC solid;
+}
+
+
+table.tbl_border th,
+table.tbl_border td {
+	border: 1px #CCC solid;
+}
+
